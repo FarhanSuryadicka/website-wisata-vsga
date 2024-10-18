@@ -1,0 +1,365 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    background: url('https://example.com/path-to-your-indonesian-landscape-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.text-center {
+    text-align: center;
+    size: 50px;
+  }
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* General Styles for content-wrapper */
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full height */
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex .form-control {
+    flex: 1;
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 8px;
+    background-color: #ffffff80; /* Slightly transparent white */
+    color: #333;
+    margin-bottom: 15px;
+    padding: 0.5rem 0.75rem;
+}
+
+.input-group {
+    flex: 1;
+    max-width: 400px; /* Limit the maximum width of the input group */
+    margin-left: 20px;
+}
+
+.input-group input.form-control {
+    border-radius: 8px 0 0 8px;
+}
+
+.input-group button.btn {
+    border-radius: 0 8px 8px 0;
+}
+
+/* Table Styles */
+.table {
+    border-collapse: collapse; /* Ensures borders are collapsed into a single border */
+}
+
+.table th, .table td {
+    border: 1px solid #dee2e6; /* Light gray border */
+    padding: 0.75rem; /* Padding inside table cells */
+}
+
+.table thead th {
+    background-color: #f8f9fa; /* Light background for table headers */
+    border-bottom: 2px solid #dee2e6; /* Slightly thicker border for header cells */
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    padding: 0.5rem 1rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    background: #000;
+}
+
+.hero .carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .carousel-caption {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+.hero .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero .carousel-caption p {
+    font-size: 1.25rem;
+}
+
+/* Gallery Styles */
+#galeri {
+    background-color: #fff;
+}
+
+#galeri h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#galeri img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Video Section Styles */
+#video {
+    background-color: #e9ecef;
+}
+
+#video h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.ratio-16x9 {
+    aspect-ratio: 16 / 9;
+}
+
+/* Paket Wisata Styles */
+#paket {
+    background-color: #fff;
+    padding: 3rem 0; /* Adjusted padding */
+    padding-bottom: 80px; /* Ensure this matches the footer height */
+}
+
+#paket h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center; /* Center text inside the card */
+}
+
+.card-img-top {
+    width: 90%; /* Ensure the image takes the full width of the card */
+    height: 250px;
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border-radius: 8px 8px 0 0; /* Rounded corners for the top of the card */
+}
+
+.card-body {
+    padding: 1.25rem;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Default width */
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 20px;
+    transition: width 0.3s ease; /* Animation for minimize */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.sidebar.minimized {
+    width: 80px; /* Sidebar width when minimized */
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    padding: 0.75rem 1rem;
+    transition: padding 0.3s ease; /* Smooth padding change */
+}
+
+.sidebar.minimized .nav-link {
+    padding: 0.75rem 0.5rem; /* Reduced padding when minimized */
+    text-align: center; /* Center-align icons when minimized */
+}
+
+.sidebar .nav-link .link-text {
+    display: inline; /* Display text by default */
+}
+
+.sidebar.minimized .nav-link .link-text {
+    display: none; /* Hide text when minimized */
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+}
+
+.sidebar.minimized .sidebar-header a.navbar-brand {
+    display: none; /* Hide the brand when minimized */
+}
+
+.sidebar-divider {
+    border-top: 1px solid #495057;
+    margin: 0.75rem 0; /* Divider line between sections */
+}
+
+/* Adjust main content to accommodate the sidebar */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    margin-bottom: 80px; /* Leave space for the footer */
+    transition: margin-left 0.3s ease; /* Smooth transition when sidebar is minimized */
+}
+
+.sidebar.minimized ~ .content-wrapper .main-content {
+    margin-left: 80px; /* Adjust content margin when sidebar is minimized */
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem 0;
+    width: 100%;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+
+/* Adjust footer when sidebar is in default state */
+.sidebar:not(.minimized) ~ .content-wrapper footer {
+    width: calc(100% - 250px); /* Adjust width for default sidebar */
+    left: 250px; /* Adjust position for default sidebar */
+}
+
+.footer-line {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ffffff; /* Adjust color as needed */
+    margin: 0 15px; /* Adjust spacing as needed */
+}
+
+/* Social Icons Styles */
+.social-icons {
+    margin: 0;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 10px;
+}
+
+.social-icons a:hover {
+    color: #ffc107;
+}
+
+/* Wrapper Styles */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Custom Login Styles */
+.login-container {
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #ffd700; /* Golden color */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #ff6f00;
+}
+
+.btn-primary {
+    background-color: #ff6f00; /* Vibrant orange */
+    border-color: #ff6f00;
+    transition: background-color 0.3s, border-color 0.3s;
+    border-radius: 8px;
+}
+
+.btn-primary:hover {
+    background-color: #e65100;
+    border-color: #e65100;
+}
+
+/* BUTTON CSV */
+.btn-group .btn {
+    margin-right: 10px;
+}
+
+.btn-group .btn i {
+    margin-right: 5px;
+}
+
+form.d-flex {
+    margin-left: auto;
+}
